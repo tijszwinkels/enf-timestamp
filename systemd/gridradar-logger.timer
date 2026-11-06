@@ -1,0 +1,10 @@
+[Unit]
+Description=Fetch Gridradar grid frequency every 30 minutes
+
+[Timer]
+OnCalendar=*:00/30
+RandomizedDelaySec=60
+Persistent=true
+
+[Install]
+WantedBy=timers.target

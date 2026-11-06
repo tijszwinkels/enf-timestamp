@@ -1,0 +1,6 @@
+__pycache__/
+*.wav
+*.m4a
+*.mp4
+data/
+*.json

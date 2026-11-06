@@ -1,0 +1,8 @@
+[Unit]
+Description=Append Gridradar grid frequency to a local archive
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/env python3 %h/.local/bin/gridradar_logger.py
